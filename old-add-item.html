@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>Main Page Demo 1</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="hero-wrapper">
+      <h1 class="hero">Add item</h1>
+      <button id="redirect-button" class="button">Home</button>
+    </div>
+    <form id="form" class="speaker-form">
+      <div class="form-row">
+        <label for="titulo">Título</label>
+        <input type="text" id="titulo" placeholder="Título">
+      </div>
+      <div class="form-row">
+        <label for="autor">Autor</label>
+        <input type="text" id="autor" placeholder="Autor">
+      </div>
+      <div class="form-row">
+        <label for="editora">Editora</label>
+        <input type="text" id="editora" placeholder="Editora">
+      </div>
+      <div class="form-row">
+        <label for="choose">Tipo</label>
+        <select id="choose">
+          <option disabled selected>Please select</option>
+          <option value="LIVRO">Livro</option>
+          <option value="GIBI">Gibi</option>
+          <option value="MANGA">Manga</option>
+        </select>
+      </div>
+      <fieldset id="formato" class="legacy-form-row">
+        <legend>Formato</legend>
+        <input id="formato-1" name="formato" type="radio" value="FISICO" checked />
+        <label for="formato-1" class="radio-label">Físico</label>
+        <input id="formato-2" name="formato" type="radio" value="DIGITAL" />
+        <label for="formato-2" class="radio-label">Digital</label>
+      </fieldset>
+      <div class="form-row">
+        <label for="quantidadePaginas">Quantidade de páginas</label>
+        <input type="number" id="quantidadePaginas" placeholder="Quantidade de páginas">
+      </div>
+      <div class="form-row">
+        <label for="edicao">Edição</label>
+        <input type="number" id="edicao" placeholder="Edição">
+      </div>
+      <div class="form-row">
+        <label for="ano-edicao">Ano edição</label>
+        <input type="number" id="ano-edicao" placeholder="Ano edição">
+      </div>
+      <div class="form-row">
+        <label for="generos">Gêneros</label>
+        <input type="text" id="generos" placeholder="Gêneros">
+      </div>
+      <div class="form-row">
+        <label for="choose">Acabamento</label>
+        <select id="acabamento">
+          <option disabled selected>Please select</option>
+          <option value="BROCHURA">Brochura</option>
+          <option value="CAPA_DURA">Capa Dura</option>
+          <option value="BOX_BROCHURA">Box Brochura</option>
+          <option value="BOX_CAPA_DURA">Box Capa Dura</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <!-- <label for="idioma">Idioma</label>
+        <input type="text" id="idioma" placeholder="Idioma"> -->
+        <label for="search">Idioma</label>
+        <input type="text" id="idioma" placeholder="Idioma">
+        <div id="resultado"></div>
+      </div>
+      <div class="form-row">
+        <label for="pais">País</label>
+        <input type="text" id="pais" placeholder="País">
+      </div>
+      <div class="form-row">
+        <label for="quantidadeLivros">Quantidade de livros</label>
+        <input type="number" id="quantidadeLivros" placeholder="Quantidade de livros">
+      </div>
+      <div class="form-row">
+        <button type="button" id="add-item" class="button">Submit</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="js/add-item.js"></script>
+</body>
+
+</html>
+
+<!-- Edição: 1
+
+Ano edição: 2019
+
+Gêneros: Ficção,Literatura norte americana,Ficção fantástica norte americana,Ficção Científica
+
+Acabamento: CAPA_DURA
+
+Idioma: Português
+
+País: Brasil
+
+País: 1 -->
